@@ -5,7 +5,15 @@ gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
 # Use SCSS for stylesheets
-gem 'mongoid', '4.0.2'
+# Use mongodb as the database
+gem 'mongoid', '~> 5.0.0'
+# enum support for both active record and mongoid, github: 'brainspec/enumerize'
+gem 'enumerize'
+# test framework for mongoid
+# gem 'mongoid-fixture_set'
+
+# for api serialization, github: 'rails-api/active_model_serializers'
+gem 'active_model_serializers', '~> 0.8.0'
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
